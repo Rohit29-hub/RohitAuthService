@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NagriExpress - Signup</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+
+</head>
+
+<body>
+  <div class="wrapperCon" id="myBox">
+
+    <div class="heading">
+      <h2>Welcome! to SignUp</h2>
+      <p>Create Your account to NagriExpres</p>
+    </div>
+    <form action="/signup" method="post">
+      <div class="fields">
+        <div class="input-group">
+          <input type="text" id="username" name="username" class="input-field" placeholder="Username">
+        </div>
+        <div class="input-group">
+          <input type="text" id="fullName" name="fullName" class="input-field" placeholder="FullName">
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" class="input-field" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" class="input-field" placeholder="Password">
+        </div>
+      </div>
+  
+      <div class="input-group row">
+  
+        <div class="row">
+          <input type="checkbox" id="remember" hidden>
+          <label for="remember" class="custom-checkbox"></label>
+          <label for="remember">Remember me?</label>
+        </div>
+  
+      </div>
+  
+  
+      <div class="input-group">
+        <button type='submit'>Create Account <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </form>
+    
+    <p style="text-align: center; padding-top: 10px;">Already have an account <a href="/login" style="text-decoration: underline;">Login</a></p>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./javascripts/index.js"></script>
+  
+
+</body>
+
+</html>

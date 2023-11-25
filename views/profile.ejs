@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NagriExpress - Profile</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="top-head">
+            <h1 class="welcome-heading" id="welcome-head">
+                <span id="w">P</span>
+                <span id="e">r</span>
+                <span id="l">o</span>
+                <span id="c">f</span>
+                <span id="o" style="padding: 0px 28px;">i</span>
+                <span id="m">l</span>
+                <span id="ee">e</span>
+            </h1>
+        </div>
+        <div class="user-container">
+                <p class="fullname-heading">
+                    Name : <%= user.fullName %>
+                </p>
+                <p class="user-username">Username : <%= user.username %></p>
+                <p class="user-posts">Total Posts :  <%= user.posts.length %> </p>
+            <a href="/logout" id="button-logout" style="padding: 7px 50px; position: absolute; bottom: -15%; background: black; color:white;">Logout</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./javascripts/index.js"></script>
+
+</html>

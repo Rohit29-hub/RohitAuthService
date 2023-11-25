@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+::selection{
+  color: #ffffff;
+  background-color: #31285C;
+ }
+ 
+ *{
+  padding:0;
+  margin: 0;
+  font-family: 'Kurale', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+ }
+ 
+ a{
+  color: #31285C;
+ }
+ 
+ 
+ 
+ body{
+  width: 100%;
+  min-height: 100vh;
+  row-gap: 2rem;
+  background-color: #F0F0F0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: background 0.3s linear;
+	background: linear-gradient(-45deg, #4e67f0, #e096b3, #23a6d5, #124b3d);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+ }
+ body::-webkit-scrollbar{
+  display: none;
+ }
+ 
+ .wrapperCon{
+  width: 500px;
+  min-height:500px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ }
+ 
+ .input-field{
+  width: 100%;
+  height: 45px;
+  border: none;
+  padding: 10px;
+  background-color: #eeeeee;
+  color: gray;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s linear;
+  border-radius: 5px;
+ }
+
+ .error{
+  font-size: 17px;
+  color: red;
+  padding: 6px;
+ }
+ 
+ .heading{
+  color: #3B3663;
+  margin-bottom: 20px;
+ }
+ .welcome-container{
+    width: 100%;
+    backdrop-filter: blur(50px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .welcome-heading{
+    font-size: 20rem;
+    display: flex;
+    margin-top: -30rem;
+    justify-content: center;
+    column-gap: 5px;
+  }
+  .welcome-heading>span{
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+  }
+
+  .btn-home-cn{
+    margin-bottom: -6rem;
+  }
+  .btn-home{
+    font-size: 4rem;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    padding: 10px 100px;
+    margin-bottom: -5rem;
+    background : rgb(255, 255, 255);
+  }
+
+  .profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .fullname-heading,.user-username,.user-posts{
+    color: white;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+  .user-container{
+    width: 560px;
+    padding-top: 10px;
+    height: 330px;
+    display: flex;
+    background: white;
+    backdrop-filter: blur(40px);
+    position: relative;
+    align-items:center;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    flex-direction: column;
+    border-bottom: 5px solid rgb(0, 183, 255);
+  }
+  
+  .top-head{
+    height: 380px;
+    width: 100%;
+  }
+ .heading h2{
+  font-size: 3rem;
+  text-align: center;padding-bottom: 10px;
+ }
+
+ .welcomeProfile{
+  font-size: 10rem;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+ }
+ .heading p{ 
+  text-align: center;
+  color: #AAA8BB;
+ }
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ 
+ .heading i{
+  font-size: 30px;
+  color: #4D61FC;
+ } 
+ 
+ label{
+  color: #AAA8BB;
+  font-weight: 400;
+ }
+ 
+ button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #31285C;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+ }
+ 
+ button:hover{
+  background-color: #31283B;
+ }
+ 
+ .row{
+  min-width: 5px;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+ }
+ 
+ .custom-checkbox{
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 10px;
+  margin-right: 5px;
+ }
+ 
+ input[type=checkbox]:checked ~ .custom-checkbox{
+  background-color: #31285C;
+ }
+ 
+ input[type=checkbox]:checked ~ .custom-checkbox::before {
+ font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   display: inline-block;
+   font-weight: 900;
+   color: #ffffff;
+ }
+ 
+ footer{
+  text-align: center;
+  margin: 20px;
+ }
+ 
+ 

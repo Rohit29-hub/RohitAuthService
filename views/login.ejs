@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NagriExpress - Login</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+</head>
+
+<body>
+    <div class="wrapperCon" id="myBox">
+
+        <div class="heading">
+            <h2>Welcome! to Login</h2>
+            <p>Login Your account to NagriExpres</p>
+        </div>
+     
+        <form action="/login" method="post">
+            <div class="fields">
+                <% if(error.length > 0){ %>
+                    <p class="error"><%= error %> </p>
+                <% }%>
+                <input type="text" id="text" name="username" class="input-field" placeholder="username">
+                <input type="password" id="password" name="password" class="input-field" placeholder="Password">
+
+            </div>
+
+            <div class="input-group">
+                <button id="submit-btn" type="submit">Login Account <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </form>
+
+        <p style="text-align: center; padding-top: 10px;">Create new account <a href="/signup"
+                style="text-decoration: underline;">SignUp</a></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./javascripts/index.js"></script>
+
+
+</body>
+
+</html>
